@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "realistic_thunder",
+  "version": "${version}",
+  "name": "Realistic Thunder Delay",
+  "description": "Real thunder arrives after the lightning.",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "ru.realisticthunder.ThunderClient"
+    ],
+    "main": [
+      "ru.realisticthunder.WeatherMod"
+    ]
+  },
+  "mixins": [
+    "realistic_thunder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "authors": [
+    "celestials011"
+  ]
+}

@@ -1,0 +1,15 @@
+plugins { id 'fabric-loom' version '1.14-SNAPSHOT' }
+version = '2.0.0-beta.1'
+group = 'ru.realisticthunder'
+base { archivesName = 'thunder-release-patch' }
+dependencies {
+ minecraft "com.mojang:minecraft:${project.minecraft_version}"
+ mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+ modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+ modRuntimeOnly files("fabric-api-test-marker.jar")
+ modImplementation files('/home/user/ThunderSystem-wind-fixed.jar')
+ ['fabric-api-base','fabric-lifecycle-events-v1','fabric-command-api-v2','fabric-rendering-v1','fabric-item-group-api-v1','fabric-object-builder-api-v1'].each { api -> modImplementation fabricApi.module(api, project.fabric_version) }
+}
+tasks.withType(JavaCompile).configureEach { it.options.release = 21 }
+java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21 }
+loom { runs { server { vmArg '-Xms64m'; vmArg '-Xmx320m'; vmArg '-XX:ActiveProcessorCount=1'; vmArg '-XX:MaxMetaspaceSize=160m' } } }

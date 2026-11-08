@@ -1,0 +1,1 @@
+{"schemaVersion": 1, "id": "storm_release_patch", "version": "2.0.0-beta.1", "environment": "*", "depends": {"fabricloader": ">=0.18.4", "minecraft": "~1.21.11", "java": ">=21", "fabric-api": "*"}, "entrypoints": {"main": ["ru.realisticthunder.TornadoSystem"], "client": ["ru.realisticthunder.VolumetricClouds"]}}

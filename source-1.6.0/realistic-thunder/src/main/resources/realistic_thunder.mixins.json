@@ -1,0 +1,1 @@
+{"required": true, "package": "ru.realisticthunder.mixin", "compatibilityLevel": "JAVA_21", "client": ["LightningMixin", "WeatherMixin", "LightningRendererMixin", "CloudMixin"], "injectors": {"defaultRequire": 1}, "mixins": ["VillagerRainMixin"]}

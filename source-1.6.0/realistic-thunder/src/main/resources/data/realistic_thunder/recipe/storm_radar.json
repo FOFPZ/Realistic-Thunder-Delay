@@ -1,0 +1,1 @@
+{"type": "minecraft:crafting_shaped", "pattern": [" C ", "IRI", " S "], "key": {"C": "minecraft:compass", "I": "minecraft:iron_ingot", "R": "minecraft:redstone", "S": "minecraft:lightning_rod"}, "result": {"id": "realistic_thunder:storm_radar", "count": 1}}

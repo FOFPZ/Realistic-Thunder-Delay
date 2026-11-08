@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "ICI",
+    " G "
+  ],
+  "key": {
+    "I": "minecraft:copper_ingot",
+    "R": "minecraft:redstone",
+    "C": "minecraft:amethyst_shard",
+    "G": "minecraft:gold_ingot"
+  },
+  "result": {
+    "id": "realistic_thunder:storm_charm",
+    "count": 1
+  }
+}

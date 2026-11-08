@@ -1,0 +1,13 @@
+plugins { id 'fabric-loom' version '1.14-SNAPSHOT' }
+version = '1.6.4'
+group = 'ru.realisticthunder'
+base { archivesName = 'thunder-map-fix' }
+dependencies {
+ minecraft "com.mojang:minecraft:${project.minecraft_version}"
+ mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+ modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+ modImplementation files('/home/user/realistic-thunder-1.6.3.jar')
+ ['fabric-api-base','fabric-lifecycle-events-v1','fabric-events-interaction-v0','fabric-rendering-v1','fabric-item-group-api-v1','fabric-object-builder-api-v1'].each { api -> modImplementation fabricApi.module(api, project.fabric_version) }
+}
+tasks.withType(JavaCompile).configureEach { it.options.release = 21 }
+java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21 }

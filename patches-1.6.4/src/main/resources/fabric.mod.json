@@ -1,0 +1,1 @@
+{"schemaVersion":1,"id":"thunder_map_fix","version":"1.6.4","environment":"client","mixins":["thunder_map_fix.mixins.json"],"depends":{"fabricloader":">=0.18.4","minecraft":"~1.21.11","java":">=21","fabric-api":"*"}}

@@ -1,0 +1,1 @@
+{"required":true,"package":"ru.realisticthunder.mixin","compatibilityLevel":"JAVA_21","client":["GrassWindMixin","CloudWeatherMixin","CloudReloadMixin"],"injectors":{"defaultRequire":1}}

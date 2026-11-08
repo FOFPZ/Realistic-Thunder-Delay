@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "realistic_thunder:block/wall_weather_map"
+    },
+    "facing=east": {
+      "model": "realistic_thunder:block/wall_weather_map",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "realistic_thunder:block/wall_weather_map",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "realistic_thunder:block/wall_weather_map",
+      "y": 270
+    }
+  }
+}

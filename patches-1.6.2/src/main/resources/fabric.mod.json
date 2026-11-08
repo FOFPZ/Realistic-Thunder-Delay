@@ -1,0 +1,1 @@
+{"schemaVersion": 1, "id": "thunder_patch", "version": "1.6.2", "name": "Thunder patch", "environment": "client", "mixins": ["thunder_patch.mixins.json"], "depends": {"fabricloader": ">=0.18.4", "minecraft": "~1.21.11", "java": ">=21", "realistic_thunder": "*"}, "entrypoints": {"client": ["ru.realisticthunder.RainRipples"]}}

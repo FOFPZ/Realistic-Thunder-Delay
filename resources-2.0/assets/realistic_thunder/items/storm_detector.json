@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "realistic_thunder:item/storm_detector"
+  }
+}
